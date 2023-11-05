@@ -1,4 +1,4 @@
- # GitHub-projektiin
+ # GitHub-projekti
 
 Tämä on esimerkki README.md-tiedostosta..
 
@@ -6,11 +6,10 @@ Tämä on esimerkki README.md-tiedostosta..
 
 Tässä on tavallista tekstiä.
 
-- lista
-- Se sisältää useita kohtia
-  - listoja
+- A list
+- Indluces different list below
+  - lists
 
-** lihavoitu teksti. **
+**Tämä on lihavoitu teksti.**
 
-
-* kursivoitu teksti. *
+*Ja tämä on kursivoitu teksti.*
