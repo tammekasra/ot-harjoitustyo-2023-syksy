@@ -1,0 +1,30 @@
+$ git log --stat | cat
+commit bf44f50a77e2ff8a12781c9cb4a8392641444dab
+Author: Ranel <raneltam@ad.helsinki.fi>
+Date:   Sun Nov 5 16:36:20 2023 +0200
+
+    Poista file1 ja file2 -> file22 rename
+
+ tiedostoja/file1             | 3 ---
+ tiedostoja/{file2 => file22} | 0
+ 2 files changed, 3 deletions(-)
+
+commit 4874ccb886a5ee4738e1fdc06effac38fbc4ae6b
+Author: Ranel <raneltam@ad.helsinki.fi>
+Date:   Sun Nov 5 16:35:16 2023 +0200
+
+    muutokset file3 sisaltoa
+
+ tiedostoja/file3 | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 22e48874dbaf82183dca67a2c7d1bb2efe3a2fd7
+Author: Ranel <raneltam@ad.helsinki.fi>
+Date:   Sun Nov 5 16:31:11 2023 +0200
+
+    Lisää hakemisto ja tiedostot file1, file2 ja file3
+
+ tiedostoja/file1 | 3 +++
+ tiedostoja/file2 | 5 +++++
+ tiedostoja/file3 | 0
+ 3 files changed, 8 insertions(+)
