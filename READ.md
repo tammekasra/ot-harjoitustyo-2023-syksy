@@ -13,3 +13,6 @@ Tässä on tavallista tekstiä.
 **Tämä on lihavoitu teksti.**
 
 *Ja tämä on kursivoitu teksti.*
+
+[Laskarit viikko 1 - Komentorivi](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/komentorivi.txt)
+[Laskarit viikko 1 - Gitlog](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/gitlog.txt)
