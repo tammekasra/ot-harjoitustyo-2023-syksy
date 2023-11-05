@@ -1,4 +1,4 @@
-# GitHub-projektii
+ #GitHub-projektii
 
 Tämä on esimerkki README.md-tiedostosta..
 
@@ -13,4 +13,4 @@ Tässä on tavallista tekstiä.
 ** lihavoitu teksti. **
 
 
-*kursivoitu teksti.*
+* kursivoitu teksti. *
