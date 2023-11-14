@@ -25,6 +25,6 @@ Date:   Sun Nov 5 16:31:11 2023 +0200
     Lisää hakemisto ja tiedostot file1, file2 ja file3
 
  tiedostoja/file1 | 3 +++
- tiedostoja/file2 | 5 +++++
+ tiedostoja/file2 | 5 +++++x
  tiedostoja/file3 | 0
  3 files changed, 8 insertions(+)
