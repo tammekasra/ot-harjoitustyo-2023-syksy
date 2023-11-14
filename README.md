@@ -22,6 +22,8 @@ Tässä on tavallista tekstiä.
 
 [Gitlog](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/gitlog.txt)
 
+[Tyoaikakirjanpito](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/tyoaikakirjanpito.md)
+
 
 [Kattavuusraportti-week2](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/viikko2/coverage.JPG)
 
