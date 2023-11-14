@@ -23,4 +23,4 @@ Tässä on tavallista tekstiä.
 [Gitlog](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/gitlog.txt)
 
 
-[Kattavuusraportti-week2](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/viikko2/coverage.JPG)]
+[Kattavuusraportti-week2](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/viikko2/coverage.JPG)
