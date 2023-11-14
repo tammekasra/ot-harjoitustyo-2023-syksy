@@ -24,3 +24,6 @@ Tässä on tavallista tekstiä.
 
 
 [Kattavuusraportti-week2](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/viikko2/coverage.JPG)
+
+
+[Vaatimusmaarittely](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/vaatimusmaarittely.md)
