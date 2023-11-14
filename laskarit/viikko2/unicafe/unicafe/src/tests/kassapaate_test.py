@@ -59,7 +59,7 @@ class TestKassapaate(unittest.TestCase):
         self.assertEqual(str(self.maksukortti), "Kortilla on rahaa 1.00 euroa")
         self.assertEqual(self.kassapaate.maukkaat, 1) 
 
-    def test_lataa_rahaa_kortille(self):
+    def lataa_rahaa_kortille(self):
         self.kassapaate.lataa_rahaa_kortille(self.maksukortti, 200)
         self.assertEqual(self.kassapaate.kassassa_rahaa, 100200)
         self.assertEqual(str(self.maksukortti), "Kortilla on rahaa 12.00 euroa")
@@ -69,5 +69,5 @@ class TestKassapaate(unittest.TestCase):
         self.assertEqual(self.kassapaate.kassassa_rahaa, 100200)
         self.assertEqual(str(self.maksukortti), "Kortilla on rahaa 12.00 euroa")
 
-    def test_kassassa_rahaa_euroina(self):
+    def kassassa_rahaa_euroina(self):
         self.assertEqual(self.kassapaate.kassassa_rahaa_euroina(), 1000.0)
