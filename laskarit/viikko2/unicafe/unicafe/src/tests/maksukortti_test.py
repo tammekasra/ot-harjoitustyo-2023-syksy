@@ -31,5 +31,5 @@ class TestMaksukortti(unittest.TestCase):
     def testa_ota_rahaa_palauttaa_false(self):
         kortti = Maksukortti(200)
         result = kortti.ota_rahaa(500)
-        self.assertFalse(result) #if we only have 200 and take 500 is impossible
+        self.assertFalse(result) #if we only have 200 and take 500 is impossible ;alksf;laksf;lak
 

@@ -1,4 +1,6 @@
 import unittest
+
+
 from maksukortti import Maksukortti
 from kassapaate import Kassapaate
 
@@ -45,9 +47,6 @@ class TestKassapaate(unittest.TestCase):
         self.assertEqual(self.kassapaate.edulliset, 0)
 
    
-      
-        
-
     def syo_maukkaasti_kortilla(self):
         self.assertTrue(self.kassapaate.syo_maukkaasti_kortilla(self.maksukortti))
         self.assertEqual(str(self.maksukortti), "Kortilla on rahaa 6.00 euroa")
