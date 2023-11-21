@@ -9,6 +9,10 @@ For full details you should check [Vaatimusmaarittely](https://github.com/tammek
 
 The links below are for week1 and week2 -kattavusraporrti (Couldn't figure out how to get 100%...)
 
+
+
+[Changelog](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/Dokumentaatio/changelog.md)
+
 [Komentorivi](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/komentorivi.txt)
 
 
