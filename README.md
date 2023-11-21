@@ -19,7 +19,7 @@ The links below are for week1 and week2 -kattavusraporrti (Couldn't figure out h
 
 [Gitlog](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/gitlog.txt)
 
-[Tyoaikakirjanpito](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/tyoaikakirjanpito.md)
+[Tyoaikakirjanpito](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/Dokumentaatio/tyoaikakirjanpito.md)
 
 
 [Kattavuusraportti-week2](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/viikko2/coverage.JPG)
