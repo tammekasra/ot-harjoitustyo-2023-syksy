@@ -13,9 +13,6 @@ The links below are for week1 and week2 -kattavusraporrti (Couldn't figure out h
 
 [Changelog](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/Dokumentaatio/changelog.md)
 
-[Komentorivi](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/laskarit/komentorivi.txt)
-
-
 [Tyoaikakirjanpito](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/Dokumentaatio/tyoaikakirjanpito.md)
 
 
