@@ -1,5 +1,6 @@
 import random
 
+
 def is_valid_move(grid, row, col, num):
     # Check if the number is not present in the current row or column
     return (
@@ -11,6 +12,7 @@ def is_valid_move(grid, row, col, num):
             for j in range(3 * (col // 3), 3 * (col // 3) + 3)
         )
     )
+
 
 def fill_sudoku(grid):
     # Iterate through each cell in the grid
@@ -26,9 +28,11 @@ def fill_sudoku(grid):
                 return False
     return True
 
+
 def print_sudoku(grid):
     for row in grid:
         print(" ".join(map(str, row)))
+
 
 # Initialize an empty 9x9 grid
 sudoku_grid = [[0] * 9 for _ in range(9)]

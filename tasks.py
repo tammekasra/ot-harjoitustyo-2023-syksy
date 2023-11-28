@@ -2,6 +2,7 @@ from invoke import task
 from subprocess import call
 from sys import platform
 
+
 @task
 def foo(ctx):
     print("bar")
@@ -39,3 +40,10 @@ def coverage_report(ctx):
     ctx.run("poetry run coverage run --branch -m pytest src")
     ctx.run("poetry run coverage report -m")
     ctx.run("poetry run coverage html")
+    
+    
+
+
+@task
+def format(c):
+    c.run("autopep8 --in-place --recursive src")

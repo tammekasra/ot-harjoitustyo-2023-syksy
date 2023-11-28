@@ -1,5 +1,6 @@
 import random
 
+
 def valid_move(grid, row, col, num):
     # This Function allows to generate random numbers such that it can be inputted there
     return (
@@ -7,10 +8,13 @@ def valid_move(grid, row, col, num):
         num not in (grid[i][col] for i in range(9)) and
         num not in (
             grid[i][j]
-            for i in range(3 * (row // 3), 3 * (row // 3) + 3) #check if it is not on the same row
-            for j in range(3 * (col // 3), 3 * (col // 3) + 3) #checks if it is not on the same column
+            # check if it is not on the same row
+            for i in range(3 * (row // 3), 3 * (row // 3) + 3)
+            # checks if it is not on the same column
+            for j in range(3 * (col // 3), 3 * (col // 3) + 3)
         )
     )
+
 
 def fill_sudoku(grid):
     #  We are filling the sudoku while generating random tables (so it wont be the same sudoku every time)
@@ -26,12 +30,16 @@ def fill_sudoku(grid):
                 return False
     return True
 
-#we print the game - when we have finally generated it
+# we print the game - when we have finally generated it
+
+
 def print_sudoku(grid):
     for row in grid:
-        print(" ".join(map(str, row))) #map converts str to columns and rows to rows so it will be printed like that more easily, rather than through 2 for loops
+        # map converts str to columns and rows to rows so it will be printed like that more easily, rather than through 2 for loops
+        print(" ".join(map(str, row)))
 
-#sudoku table - empty filled with 0
+
+# sudoku table - empty filled with 0
 sudoku_grid = [[0] * 9 for _ in range(9)]
 
 # replaces 0 with number from 1-9 such that it is a sudoku game

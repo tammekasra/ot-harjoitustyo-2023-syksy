@@ -2,6 +2,7 @@
 EDULLINEN = 250
 MAUKAS = 400
 
+
 class Maksukortti:
     def __init__(self, saldo):
         # saldo on senteissä

@@ -1,5 +1,6 @@
 import unittest
-from src.maksukortti import Maksukortti  
+from src.maksukortti import Maksukortti
+
 
 class TestMaksukortti(unittest.TestCase):
     def test_kortin_saldo_alustetaan_oikein(self):
