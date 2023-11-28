@@ -8,7 +8,7 @@ class SudokuApp {
 }
 
 class SudokuGame {
-  - board: List<List<int>>
+  - board: 9x9
   - font: PygameFont
 
 
