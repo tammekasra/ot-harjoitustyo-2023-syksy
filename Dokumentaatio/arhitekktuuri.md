@@ -9,21 +9,16 @@ class SudokuApp {
 
 class SudokuGame {
   - board: List<List<int>>
-  - selected: Tuple<int, int> or None
   - font: PygameFont
 
 
-  + draw_board(screen)
-  + is_valid_move(row, col, num)
-  + solve_sudoku()
-  + find_empty_cell() : Tuple<int, int> or None
-  + draw_message(screen, message)
-  + run_game()
+  + draw_board
+  + is_valid_move(check if it is the correct slot)
+  + solve_sudoku( solves the sudoku)
 }
 
 class SudokuSolver {
-  + is_valid_move(board, row, col, num) : bool
-  + solve_sudoku(board) : bool
+  + is_valid_move(says if it can be played there or not)
   + find_empty_cell(board) : Tuple<int, int> or None
 }
 
