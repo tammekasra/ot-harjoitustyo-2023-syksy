@@ -25,4 +25,18 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 format = "invoke format"
 
+[tool.poetry.scripts]
+pytest = "pytest"
+
+[tool.pytest]
+testpaths = ["tests"]
+
+[tool.poetry]
+name = "Sudoku"
+
+[tool.poetry.scripts]
+format = "invoke format"
+pytest = "pytest tests"
+
+
 

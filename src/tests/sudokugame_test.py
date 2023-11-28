@@ -1,37 +1,41 @@
-import unittest
+import pytest
 from Sudoku.game import SudokuGame
+from Sudoku.solver import SudokuSolver
 
-class TestSudokuGame(unittest.TestCase):
-    def setUp(self):
-        self.game = SudokuGame()
+@pytest.fixture
+def empty_game():
+    return SudokuGame()
 
-    def test_board(self):
-        initial_board =  [[5, 3, 0, 0, 7, 0, 0, 0, 0],
-                      [6, 0, 0, 1, 9, 5, 0, 0, 0],
-                      [0, 9, 8, 0, 0, 0, 0, 6, 0],
-                      [8, 0, 0, 0, 6, 0, 0, 0, 3],
-                      [4, 0, 0, 8, 0, 3, 0, 0, 1],
-                      [7, 0, 0, 0, 2, 0, 0, 0, 6],
-                      [0, 6, 0, 0, 0, 0, 2, 8, 0],
-                      [0, 0, 0, 4, 1, 9, 0, 0, 5],
-                      [0, 0, 0, 0, 8, 0, 0, 7, 9]]
-           
-        self.assertEqual(self.game.board, initial_board)
+@pytest.fixture
+def sample_game():
+    return SudokuGame()
 
-    def test_valid_move(self): #we test if the number 4 on row 0 and col 2 is is indeed 4 (which is the only correct one)
-        row, col, num = 0, 2, 4
-        result = self.game.is_valid_move(row, col, num)
-        self.assertTrue(result)
-        
-        row, col, num = 0, 2, 5 # test if the number 5 on row 0 and column 2 is indeed 5
-        result = self.game.is_valid_move(row, col, num)
-        self.assertFalse(result)
+def test_initialization(empty_game):
+    assert empty_game.board == [[0] * 9 for _ in range(9)]
+    assert empty_game.selected is None
+    assert empty_game.font is not None
 
-    def test_solve_sudoku(self):
-    
-        result = self.game.solve_sudoku() #we see if the sudoku table is indeed solvable
-        self.assertTrue(result)
+def test_draw_board(empty_game, capsys):
+    empty_game.draw_board(None)
+    captured = capsys.readouterr()
+    assert "draw_board" in captured.out
 
-        for row in self.game.board: #we check if the values are not 0
-            for num in row:
-                self.assertNotEqual(num, 0)
+def test_is_valid_move(empty_game):
+    empty_game.board = [
+        [5, 3, 0, 0, 7, 0, 0, 0, 0],
+        [6, 0, 0, 1, 9, 5, 0, 0, 0],
+        [0, 9, 8, 0, 0, 0, 0, 6, 0],
+        [8, 0, 0, 0, 6, 0, 0, 0, 3],
+        [4, 0, 0, 8, 0, 3, 0, 0, 1],
+        [7, 0, 0, 0, 2, 0, 0, 0, 6],
+        [0, 6, 0, 0, 0, 0, 2, 8, 0],
+        [0, 0, 0, 4, 1, 9, 0, 0, 5],
+        [0, 0, 0, 0, 8, 0, 0, 7, 9]
+    ]
+    assert empty_game.is_valid_move(0, 2, 4)  
+    assert not empty_game.is_valid_move(0, 2, 3)
+
+def test_solve_sudoku(empty_game):
+   
+    empty_game.solve_sudoku()
+    assert empty_game.find_empty_cell() is None
