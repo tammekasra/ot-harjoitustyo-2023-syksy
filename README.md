@@ -15,7 +15,7 @@ The links below are for week1 and week2 -kattavusraporrti (Couldn't figure out h
 
 [Tyoaikakirjanpito](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/Dokumentaatio/tyoaikakirjanpito.md)
 
-[arkkitehtuuri](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/Dokumentaatio/arkkitehtuuri.JPG)
+[arkkitehtuuri](https://github.com/tammekasra/ot-harjoitustyo-2023-syksy/blob/main/Dokumentaatio/arhitekktuuri.md)
 
 
 
