@@ -1,27 +1,25 @@
-# sudoku/game.py
-
 import pygame
 import sys
 from Sudoku.solver import SudokuSolver
 
 
-pygame.init()
-pygame.font.init()
+pygame.init() #we init the pygame
+pygame.font.init() #we need to init the font for U.I
 # Colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 GRAY = (200, 200, 200)
 
-# Screen dimensions
+# Screen width and height
 SCREEN_WIDTH = 540
 SCREEN_HEIGHT = 600
 
-# Grid dimensions
+
 GRID_SIZE = 9
 CELL_SIZE = SCREEN_WIDTH // GRID_SIZE
 
 class SudokuGame:
-    def __init__(self):
+    def __init__(self): #our board
         self.board = [[5, 3, 0, 0, 7, 0, 0, 0, 0],
                       [6, 0, 0, 1, 9, 5, 0, 0, 0],
                       [0, 9, 8, 0, 0, 0, 0, 6, 0],
@@ -52,7 +50,7 @@ class SudokuGame:
                     value = self.font.render(str(self.board[i][j]), True, GRAY)
                     screen.blit(value, (x + CELL_SIZE // 3, y + CELL_SIZE // 4))
 
-        # Highlight selected cell
+      
         if self.selected:
             pygame.draw.rect(screen, (0, 128, 255), (self.selected[1] * CELL_SIZE, self.selected[0] * CELL_SIZE, CELL_SIZE, CELL_SIZE), 3)
 
