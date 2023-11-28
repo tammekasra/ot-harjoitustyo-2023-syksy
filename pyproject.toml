@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "poetry"
+name = "Sudoku"
 version = "0.1.0"
 description = ""
 authors = ["Ranel Tammel <raneltam@ad.helsinki.fi>"]
@@ -10,7 +10,6 @@ python = "^3.10"
 invoke = "^2.2.0"
 coverage = "^7.3.2"
 pygame = "^2.5.2"
-
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^7.3.2"
@@ -24,19 +23,7 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 format = "invoke format"
-
-[tool.poetry.scripts]
 pytest = "pytest"
 
 [tool.pytest]
-testpaths = ["tests"]
-
-[tool.poetry]
-name = "Sudoku"
-
-[tool.poetry.scripts]
-format = "invoke format"
-pytest = "pytest tests"
-
-
-
+testpaths = ["src/tests"]
