@@ -19,7 +19,7 @@ class SudokuGame {
 
 class SudokuSolver {
   + is_valid_move(says if it can be played there or not)
-  + find_empty_cell(board) : Tuple<int, int> or None
+  + find_empty_cell(board) : find any empty slots
 }
 
 SudokuApp --> SudokuGame : contains
