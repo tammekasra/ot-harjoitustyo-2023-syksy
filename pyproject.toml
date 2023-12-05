@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Sudoku"
+name = "poetry"
 version = "0.1.0"
 description = ""
 authors = ["Ranel Tammel <raneltam@ad.helsinki.fi>"]
@@ -21,9 +21,4 @@ autopep8 = "^2.0.4"
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.scripts]
-format = "invoke format"
-pytest = "pytest"
 
-[tool.pytest]
-testpaths = ["src/tests"]
